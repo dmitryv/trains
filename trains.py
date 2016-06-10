@@ -47,6 +47,9 @@ def question_8(map):
 def question_9(map):
     output(9, map.shortest_route('B', 'B'))
 
+def question_b(map):
+    output('b', map.shortest_route('A', 'D'))
+
 def question_10(map):
     accept_func = lambda step, distance: distance < 30
     trim_func   = lambda step, distance: distance >= 30
@@ -64,6 +67,10 @@ def main():
     question_8(map)
     question_9(map)
     question_10(map)
+
+    map2 = input(['AB5', 'BC4', 'CA8', 'DE6', 'ED6'])
+    question_b(map2)
+
     return
 
 if __name__ == '__main__':
